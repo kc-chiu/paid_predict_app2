@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+{% block body %}
+<section class="hero is-white is-medium">
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="../static/img/logo.jpg" alt="logo">&#160;
+        <h6 href="/" class="subtitle"><strong>Plant Disease Prediction</strong></h6>
+      </a>
+      <div id="navbar-burger-id" class="navbar-burger burger" data-target="navbar-menu-id">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navbar-menu-id" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item">
+          <div class="field">
+            <p class="control has-icons-left">
+              <input class="login-input input is-small is-success" type="text" id="login-user" placeholder="Username">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-user"></i>
+                </span>
+            </p>
+          </div>
+        </a>
+        <a class="navbar-item">
+          <div class="field">
+            <p class="control has-icons-left">
+              <input class="login-input input is-small is-success" type="password" id="login-pass" placeholder="Password">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-lock"></i>
+                </span>
+            </p>
+          </div>
+        </a>
+        <span class="navbar-item">
+          <a id="login-button" class="button is-primary is-inverted">
+            <span class="icon">
+              <i class="fa fa-check"></i>
+            </span>
+            <span>Login</span>
+          </a>
+        </span>
+      </div>
+    </div>
+  </nav>
+</section>
+<title></title>
+<section class="hero is-primary is-bold is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="columns">
+        <div class="column is-auto">
+          <p class="title is-1">Plant Disease Prediction</p>
+          <p class="subtitle is-4"><i>Upload your leaf image for prediction</i></p>
+          <p class="subtitle is-5">&#42;&#42;&#42; USD 1.00 per prediction &#42;&#42;&#42;</p>
+          <table>
+            <tr>
+              <th>Plant Applicable</th>
+              <th>Predictions Available</th>
+            </tr>
+            <tr>
+              <td>Apple</td>
+              <td>'Apple_scab', 'Black_rot', 'Cedar_apple_rust', 'healthy'</td>
+            </tr>
+            <tr>
+              <td>Blueberry</td>
+              <td>'healthy'</td>
+            </tr>
+            <tr>
+              <td>Cherry_(including_sour)</td>
+              <td>'Powdery_mildew', 'healthy'</td>
+            </tr>
+            <tr>
+              <td>Corn_(maize)</td>
+              <td>'Cercospora_leaf_spot Gray_leaf_spot', 'Common_rust_', 'Northern_Leaf_Blight', 'healthy'</td>
+            </tr>
+            <tr>
+              <td>Grape</td>
+              <td>'Black_rot', 'Esca_(Black_Measles)', 'Leaf_blight_(Isariopsis_Leaf_Spot)', 'healthy'</td>
+            </tr>
+            <tr>
+              <td>Orange</td>
+              <td>'Haunglongbing_(Citrus_greening)'</td>
+            </tr>
+            <tr>
+              <td>Peach</td>
+              <td>'Bacterial_spot', 'healthy'</td>
+            </tr>
+            <tr>
+              <td>Pepper,_bell</td>
+              <td>'Bacterial_spot', 'healthy'</td>
+            </tr>
+            <tr>
+              <td>Potato</td>
+              <td>'Early_blight', 'Late_blight', 'healthy'</td>
+            </tr>
+            <tr>
+              <td>Raspberry</td>
+              <td>'healthy'</td>
+            </tr>
+            <tr>
+              <td>Soyean</td>
+              <td>'healthy'</td>
+            </tr>
+            <tr>
+              <td>Squash</td>
+              <td>'Powdery_mildew'</td>
+            </tr>
+            <tr>
+              <td>Strawberry</td>
+              <td>'Leaf_scorch', 'healthy'</td>
+            </tr>
+            <tr>
+              <td>Tomato</td>
+              <td>'Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites
+              Two-spotted_spider_mite', 'Target_Spot', 'Tomato_Yellow_Leaf_Curl_Virus', 'Tomato_mosaic_virus', 'healthy'</td>
+            </tr>
+          </table>
+                   
+        </div>
+        <div class="column is-auto">
+          <div id="signup-box" class="signup-box">
+            <div class="signup-area">
+              <h1 class="title">Sign Up</h1>
+              <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input id="signup-user" class="input is-success" type="text" placeholder="Username">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-user"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input id="signup-mail" class="input is-success" type="text" placeholder="Email">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input id="signup-pass" class="input" type="password" placeholder="Password">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-lock"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                  </span>
+                </p>
+              </div>
+              <br>
+              <a id="signup-button" class="form-button button is-primary is-inverted is-outlined">Sign Up</a>
+              <br>
+              <br>
+              <i><a id="feedback" class="feedback"></a></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+</section>
+<section class="hero">
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p class="title is-3">&#8213; Plant Disease Prediction &#8213;</p>
+      </div>
+    </div>
+  </footer>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/scripts.js"></script>
+{% endblock %}
